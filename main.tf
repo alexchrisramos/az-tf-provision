@@ -86,10 +86,10 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
   size                  = var.vm_instance_size
 
   os_disk {
-    name                 = "myOsDisk"
+    name                 = "support-test-osdisk"
     caching              = "ReadWrite"
     storage_account_type = "StandardSSD_LRS"
-    disk_size_gb         = 128
+    disk_size_gb         = var.disk_size
   }
 
   source_image_reference {

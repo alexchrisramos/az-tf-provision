@@ -12,3 +12,7 @@ variable "vm_instance_size" {
   default       = "Standard_DS1_v2"
   description   = "Size of the VM."
 }
+
+variable "disk_size" {
+  default       = 30
+}
